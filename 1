@@ -1,0 +1,51 @@
+#include<stdio.h>
+
+int main()
+{
+	int n;
+	printf("Enter number : ");
+	scanf("%d",&n);
+	
+	int a=1;
+	int b;
+	while(a<=n)
+	{	
+		if (a%2==1)
+		{
+			b=1;
+			while (b<=n)
+			{
+				if (b%2==1)
+			{
+				printf("*");
+			}
+			else
+			{
+				printf(" ");
+			}
+			b++;	
+			}
+			printf("\n");	
+		}
+		else
+		{
+			b=1;
+			while (b<=n)
+			{
+				if (b%2==1)
+			{
+				printf(" ");
+			}
+			else
+			{
+				printf("*");
+			}
+			b++;	
+			}
+			printf("\n");	
+		}
+		a++;
+	}
+	
+	return 0;
+}
